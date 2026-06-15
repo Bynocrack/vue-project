@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.documento {
+  width: 922px;
+  margin: 0 auto;
+  padding: 8px 10px 36px;
+}
+
+.encabezado {
+  text-align: center;
+}
+
+.encabezado h1 {
+  margin: 0 0 4px;
+  color: #1f4e79;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.encabezado h2 {
+  margin: 0 0 14px;
+  color: #444;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fecha {
+  margin: 0 0 20px;
+  color: #666;
+  font-size: 13px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 18px 0 22px;
+}
+
+.bloque {
+  margin-bottom: 28px;
+}
+
+.bloque h3 {
+  margin: 0 0 18px;
+  padding: 7px 10px;
+  background: #f1f1f1;
+  border-left: 4px solid #1f4e79;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.datos-alumno {
+  padding-left: 7px;
+}
+
+.fila-dato {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  margin-bottom: 12px;
+}
+
+.fila-dato strong {
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #d9d9d9;
+  padding: 11px 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background: #fafafa;
+  font-weight: 700;
+}
+
+td:first-child,
+th:first-child {
+  width: 38px;
+  text-align: center;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  width: 78px;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+  width: 74px;
+}
+
+td:nth-child(5),
+th:nth-child(5) {
+  width: 66px;
+}
+
+td:nth-child(6),
+th:nth-child(6) {
+  width: 102px;
+}
+
+td:nth-child(7),
+th:nth-child(7) {
+  width: 225px;
+}
+
+.curso strong {
+  display: block;
+  font-weight: 700;
+}
+
+.curso span {
+  display: block;
+}
+
+.total {
+  margin-top: 34px;
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 22px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.mensaje,
+.error {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.error {
+  color: #b00020;
+  font-weight: bold;
+}
