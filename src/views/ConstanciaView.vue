@@ -4,7 +4,7 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
-const API_URL = import.meta.env.VITE_API_URL
+const API_URL = import.meta.env.VITE_API_URL || '/api/enrollment-certificate'
 
 const matriculas = ref([])
 const total = ref(0)
@@ -40,9 +40,10 @@ async function cargarConstancia(cui) {
   fechaEmision.value = ''
 
   try {
-    const url = `${API_URL}?cui=${encodeURIComponent(cui)}`
+    const url = new URL(API_URL, window.location.origin)
+    url.searchParams.set('cui', cui)
 
-    const response = await fetch(url)
+    const response = await fetch(url.toString())
 
     if (!response.ok) {
       throw new Error(`Error HTTP ${response.status}`)
