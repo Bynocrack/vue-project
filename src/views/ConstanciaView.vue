@@ -164,7 +164,7 @@ watch(
       </p>
 
       <footer>
-        Documento generado digitalmente por el Sistema de Matrícula de Laboratorio EPIS.
+        Página web hecha y deployada por Josue Alexander Madueño Macedo.
       </footer>
     </template>
   </main>
